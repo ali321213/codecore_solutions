@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCore Solutions - Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="CodeCore Solutions - Future-ready software development, web & mobile apps, UI/UX design, and custom solutions for businesses worldwide.">
+    <meta name="keywords"
+        content="Software Development, Web Development, Mobile Apps, UI/UX Design, CodeCore Solutions, Lahore, Pakistan, Portfolio, Custom Software">
+    <meta name="author" content="CodeCore Solutions">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="CodeCore Solutions - Portfolio">
+    <meta property="og:description"
+        content="Building future-ready software for businesses. Explore our portfolio and services.">
+    <meta property="og:image" content="https://picsum.photos/400/250?random=1">
+    <meta property="og:url" content="https://codecoresolutions.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeCore Solutions - Portfolio">
+    <meta name="twitter:description"
+        content="Building future-ready software for businesses. Explore our portfolio and services.">
+    <meta name="twitter:image" content="https://picsum.photos/400/250?random=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    </script>
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-gradient-to-r from-indigo-600 to-blue-600 fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 sm:px-10 lg:px-20 py-4">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-white">CodeCore Solutions</h1>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <nav>
+                <ul id="menu" class="hidden md:flex space-x-8 text-white font-medium">
+                    <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-200">About Us</a></li>
+                    <li><a href="#services" class="hover:text-gray-200">Services</a></li>
+                    <li><a href="#portfolio" class="hover:text-gray-200">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-indigo-700 text-white px-6 py-4 space-y-4">
+            <a href="#home" class="block hover:text-gray-200">Home</a>
+            <a href="#about" class="block hover:text-gray-200">About Us</a>
+            <a href="#services" class="block hover:text-gray-200">Services</a>
+            <a href="#portfolio" class="block hover:text-gray-200">Portfolio</a>
+            <a href="#contact" class="block hover:text-gray-200">Contact Us</a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-700 to-blue-600 text-white text-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 px-6" data-aos="fade-up">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Building Future-Ready Software</h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">We help businesses transform with
+                modern Web & Mobile applications designed to scale and perform.</p>
+            <a href="#contact"
+                class="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg shadow hover:bg-gray-100 transition">Get
+                in
+                Touch</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">About Us</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <p class="text-gray-700 mb-6">Founded with a mission to empower businesses with technology-driven
+                    solutions, we have been delivering top-notch digital products worldwide for over 5 years.</p>
+                <p class="text-gray-700">Our multidisciplinary team specializes in software development, mobile apps,
+                    cloud-based solutions, and UI/UX design. We thrive on solving business challenges with innovation.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="p-6 shadow rounded-lg bg-white text-center" data-aos="zoom-in">
+                    <h3 class="font-bold text-lg text-indigo-600">Vision</h3>
+                    <p class="mt-2 text-gray-600">Shaping the digital future through innovative solutions.</p>
+                </div>
+                <div class="p-6 shadow rounded-lg bg-white text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="font-bold text-lg text-indigo-600">Mission</h3>
+                    <p class="mt-2 text-gray-600">Delivering scalable, reliable & user-focused software worldwide.</p>
+                </div>
+                <div class="p-6 shadow rounded-lg bg-white text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="font-bold text-lg text-indigo-600">Values</h3>
+                    <p class="mt-2 text-gray-600">Innovation, Integrity, and Customer Success drive us.</p>
+                </div>
+                <div class="p-6 shadow rounded-lg bg-white text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="font-bold text-lg text-indigo-600">Team</h3>
+                    <p class="mt-2 text-gray-600">Developers, designers & strategists with global experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left">
+                    <i class="fas fa-code text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">Web Development</h3>
+                    <p class="mt-3 text-gray-600">Modern, responsive, and scalable websites built with PHP, Laravel,
+                        CodeIgniter, Django, ReactJS, and Next.js.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-mobile-alt text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">Mobile App Development</h3>
+                    <p class="mt-3 text-gray-600">Cross-platform mobile applications with seamless performance and
+                        usability.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-desktop text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">Desktop Applications</h3>
+                    <p class="mt-3 text-gray-600">Custom desktop applications to improve productivity and streamline
+                        workflows.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-paint-brush text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">UI/UX Design</h3>
+                    <p class="mt-3 text-gray-600">Human-centered designs delivering smooth user experiences across all
+                        platforms.</p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-layer-group text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">Full-Stack Solutions</h3>
+                    <p class="mt-3 text-gray-600">End-to-end development from backend to frontend using modern stacks.
+                    </p>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition transform hover:-translate-y-2 text-center"
+                    data-aos="flip-left" data-aos-delay="500">
+                    <i class="fas fa-cogs text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-bold text-xl text-indigo-600">Custom Software</h3>
+                    <p class="mt-3 text-gray-600">Tailored enterprise-grade solutions that scale with your company.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20 container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">Our Portfolio</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in">
+                <img src="https://picsum.photos/400/250?random=1" alt="Project 1" class="w-full">
+                <div class="p-5">
+                    <h3 class="font-semibold text-lg">E-Commerce Platform</h3>
+                    <p class="text-gray-600">Built with Laravel & Vue.js for seamless shopping.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in"
+                data-aos-delay="150">
+                <img src="https://picsum.photos/400/250?random=2" alt="Project 2" class="w-full">
+                <div class="p-5">
+                    <h3 class="font-semibold text-lg">Food Delivery App</h3>
+                    <p class="text-gray-600">Cross-platform mobile app with real-time tracking features.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in"
+                data-aos-delay="300">
+                <img src="https://picsum.photos/400/250?random=3" alt="Project 3" class="w-full">
+                <div class="p-5">
+                    <h3 class="font-semibold text-lg">Corporate Website</h3>
+                    <p class="text-gray-600">Elegant consulting firm site with CMS integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-20 container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-4" data-aos="fade-right">
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded-md">
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded-md">
+                <textarea name="message" placeholder="Your Message" rows="4" required
+                    class="w-full p-3 border rounded-md"></textarea>
+                <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700"
+                    onclick="gtag('event', 'contact_form_submit', { 'event_category': 'Contact', 'event_label': 'Contact Us Form' })">
+                    Send Message
+                </button>
+            </form>
+            <div class="p-8 bg-white shadow-lg rounded-xl" data-aos="fade-left">
+                <h3 class="font-bold text-xl text-indigo-600 mb-4">Get in Touch</h3>
+                <p class="text-gray-600 mb-2"><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                <p class="text-gray-600 mb-2"><i class="fas fa-envelope"></i> info@codecoresolutions.com</p>
+                <p class="text-gray-600 mb-2"><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <iframe class="w-full h-64 mt-4 rounded-lg"
+                    src="https://maps.google.com/maps?q=Lahore%20Pakistan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white w-11/12 md:w-2/3 lg:w-1/2 rounded-lg shadow-lg p-6 relative">
+            <button id="close-privacy"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4">Privacy Policy</h2>
+            <div class="text-gray-700 space-y-4 max-h-96 overflow-y-auto pr-2">
+                <p>We respect your privacy and are committed to protecting your personal data.
+                    This Privacy Policy explains how we handle your information.</p>
+                <h3 class="font-semibold text-lg text-indigo-600">1. Information We Collect</h3>
+                <p>We may collect your name, email, and message when you contact us.</p>
+                <h3 class="font-semibold text-lg text-indigo-600">2. How We Use Your Data</h3>
+                <p>Your information is used only to respond to inquiries and improve our services.</p>
+                <h3 class="font-semibold text-lg text-indigo-600">3. Cookies & Analytics</h3>
+                <p>We use cookies and Google Analytics to track site performance.</p>
+                <h3 class="font-semibold text-lg text-indigo-600">4. Contact Us</h3>
+                <p>Email us at <b>info@codecoresolutions.com</b>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-6">
+        <p>&copy; 2025 CodeCore Solutions. All rights reserved.
+            <a href="javascript:void(0)" id="privacy-link" class="text-indigo-400 hover:underline ml-2">
+                Privacy Policy
+            </a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init({
+                duration: 1000, // animation speed
+                once: false,    // false means animation happens every time element enters viewport
+                offset: 100,    // trigger animation when element is 100px inside the viewport
+            });
+
+
+            // Smooth scroll
+            $("a[href^='#']").on("click", function (e) {
+                e.preventDefault();
+                // ignore if href="#" (like privacy policy)
+                if ($(this).attr("href") === "#") return;
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 60
+                }, 700);
+            });
+
+
+            // Mobile menu
+            $("#menu-btn").click(function () {
+                $("#menu").toggleClass("hidden");
+            });
+
+            // Privacy modal open
+            $("#privacy-link").click(function (e) {
+                e.preventDefault();
+                $("#privacy-modal").removeClass("hidden").hide().fadeIn();
+            });
+
+            // Close modal
+            $("#close-privacy, #privacy-modal").click(function (e) {
+                if (e.target.id === "privacy-modal" || e.target.id === "close-privacy") {
+                    $("#privacy-modal").fadeOut(function () {
+                        $(this).addClass("hidden");
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
