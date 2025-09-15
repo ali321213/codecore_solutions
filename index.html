@@ -27,6 +27,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -36,46 +38,158 @@
     </script>
     <!-- AOS Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <!-- Navbar -->
-    <header class="bg-gradient-to-r from-indigo-600 to-blue-600 fixed w-full z-50 shadow-md">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 sm:px-10 lg:px-20 py-4">
-            <!-- Logo -->
-            <h1 class="text-2xl font-bold text-white">CodeCore Solutions</h1>
-
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <!-- Desktop Menu -->
-            <nav>
-                <ul id="menu" class="hidden md:flex space-x-8 text-white font-medium">
-                    <li><a href="#home" class="hover:text-gray-200">Home</a></li>
-                    <li><a href="#about" class="hover:text-gray-200">About Us</a></li>
-                    <li><a href="#services" class="hover:text-gray-200">Services</a></li>
-                    <li><a href="#portfolio" class="hover:text-gray-200">Portfolio</a></li>
-                    <li><a href="#contact" class="hover:text-gray-200">Contact Us</a></li>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="CodeCore_logo.png" alt="Webteck"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children mega-menu-wrap">
+                        <a href="#">Home</a>
+                        
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    
+                    
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-
-        <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-indigo-700 text-white px-6 py-4 space-y-4">
-            <a href="#home" class="block hover:text-gray-200">Home</a>
-            <a href="#about" class="block hover:text-gray-200">About Us</a>
-            <a href="#services" class="block hover:text-gray-200">Services</a>
-            <a href="#portfolio" class="block hover:text-gray-200">Portfolio</a>
-            <a href="#contact" class="block hover:text-gray-200">Contact Us</a>
+    </div><!--==============================
+	Header Area
+==============================-->
+    <header class="th-header header-layout11 header-absolute">
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="menu-area">
+                <div class="container th-container4">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a class="icon-masking" href="index.html"><span data-mask-src="CodeCore_logo.png" class=""></span><img src="CodeCore_logo.png" alt="codecoresolutions"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <nav class="main-menu style2 d-none d-lg-inline-block">
+                                <ul>
+                                    <li class="">
+                                        <a href="#hero">Home</a>
+                                        
+                                    </li>
+                                    
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    
+                                    
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                        </div>
+                        <div class="col-auto d-none d-xl-inline-block">
+                            <div class="header-button">
+                                <a href="tel:+25862323258" class="th-btn style3 style-radius text-capitalize">Call us: +92 123 456789</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    
 
 
     <!-- Hero Section -->
-    <section id="home"
+     
+     <div class="th-hero-wrapper hero-13" id="hero" data-bg-src="assets/img/bg/hero_bg_2.jpg">
+        <div class="container th-container4 bg-black bg-opacity-40">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="hero-style13">
+                        <span class="sub-title">One-Stop Solution For All Your Business Needs</span>
+                        <h1 class="hero-title">Creating <span class="square-text">
+                                <span class="dot1"></span>
+                                <span class="dot2"></span>
+                                Software
+                            </span> & Digital Excellence</h1>
+                        <div class="hero-wrapp">
+                            <div class="btn-group">
+                                <div class="">
+                                    <a href="#contact" class="th-btn style3 text-capitalize">Get Started
+                                        Now</a>
+                                </div>
+                                
+                                
+
+                            </div>
+                            <div class="cilent-box">
+                                <img src="assets/img/shape/arrow.png" alt="">
+                                <div class="about-content">
+                                    <span class="title">(4,5/5) Rating Star by Clients</span>
+                                    <div class="about-wrapp">
+                                        <div class="about_review">
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-sharp fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                        <a href="about.html" class="line-btn">More details<i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="th-hero-img">
+                        <img src="assets/img/hero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <section id="home"
         class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-700 to-blue-600 text-white text-center relative">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="relative z-10 px-6" data-aos="fade-up">
@@ -87,9 +201,52 @@
                 in
                 Touch</a>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Us -->
+     <div class=" space-bottom " id="about-sec">
+        <div class="container th-container4">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="img-box14">
+                        <div class="img1">
+                            <img src="assets/img/normal/about_12_1.jpg" alt="About">
+                        </div>
+                        <div class="img2">
+                            <img src="assets/img/normal/about_12_3.jpg" alt="About">
+                        </div>
+                        <div class="img3">
+                            <img src="assets/img/normal/about_12_2.jpg" alt="About">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="title-area mb-35">
+                        <span class="sub-title sub-title3 style1">Who We Are</span>
+                        <h2 class="sec-title">We’re Building Modern And Hight Quality<span class="text-theme">Software</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-25">IT companies stay abreast of emerging technologies and industry trends to remain
+                        competitive and provide innovative solutions to their clients. This includes trends such as
+                        artificial intelligence, machine learning, Internet of Things (IoT), blockchain, edge computing, and
+                        5G networks.</p>
+                    <h6 class="text-theme fw-semibold mb-30">We are making every business grow!</h6>
+                    <div class="checklist style8 mb-40">
+                        <ul>
+                            <li><i class="fa-light fa-square-check"></i>Super user and easy to use interface</li>
+                            <li><i class="fa-light fa-square-check"></i>Easiest way to grow your business in days</li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="th-btn popup-video style-radius fs-16 text-capitalize"><i class="fa-solid fa-circle-play me-2"></i>View Demo</a>
+                        <a href="contact.html" class="th-btn style10 fs-16 text-capitalize">Try for free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <section id="about" class="py-20 container mx-auto px-6">
         <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center" data-aos="fade-up">About Us</h2>
         <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -259,6 +416,11 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
     <script>
         $(document).ready(function () {
             AOS.init({
