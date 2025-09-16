@@ -116,7 +116,7 @@ Version: 1.0.0
 /*------------------- 1.5. Typography -------------------*/
 html,
 body {
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -148,6 +148,65 @@ body.bg-dark {
   --theme-color: #02CE80;
   --theme-color2: #7BD706;
 }
+
+brand-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  /* uniform sizing for all logos */
+  .brand-box img {
+    max-width: 80px;    /* adjust as needed */
+    max-height: 50px;   /* keep aspect ratio */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.28s ease, filter 0.28s ease;
+    filter: grayscale(100%) opacity(0.85);
+  }
+
+  /* hover effect: colored, slightly bigger */
+  .brand-box:hover img {
+    transform: scale(1.08);
+    filter: grayscale(0%) opacity(1) drop-shadow(0 6px 18px rgba(12, 12, 12, 0.18));
+  }
+
+  /* small responsive tweak */
+  @media (max-width: 576px) {
+    .brand-box img {
+      max-width: 72px;
+      max-height: 56px;
+    }
+  }
+
+
+/* Make service boxes equal height */
+.service-item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* make it flexible */
+    min-height: 320px; /* adjust depending on design */
+    padding: 20px;
+    background: #fff; /* optional: for consistent look */
+    border-radius: 10px; /* optional: rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* optional: subtle shadow */
+}
+
+/* Ensure content inside stretches evenly */
+.service-item2_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
 
 iframe {
   border: none;
@@ -17143,7 +17202,7 @@ span.select2-selection.select2-selection--single:focus {
 .img-box14 .shape1 {
   position: absolute;
   top: -15px;
-  right: -47px;
+  right: -17px;
   z-index: -1;
   /* Medium devices */
 }
