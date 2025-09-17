@@ -205,6 +205,15 @@ brand-box {
     justify-content: space-between;
 }
 
+/* Make sure modal always appears above the navbar */
+.modal-backdrop {
+  z-index: 1050 !important;
+}
+
+.modal {
+  z-index: 1060 !important;
+}
+
 
 
 
@@ -7139,6 +7148,14 @@ a.text-theme:hover,
       -ms-flex-item-align: center;
           align-self: center;
 }
+
+.modal.fade .modal-dialog {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-out;
+  }
+  .modal.fade.show .modal-dialog {
+    transform: scale(1);
+  }
 
 .footer-info_link {
   display: inline-block;

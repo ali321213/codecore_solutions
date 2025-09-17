@@ -66,6 +66,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -674,114 +675,133 @@ Process Area
     </section><!--==============================
 Project Area  
 ==============================-->
-    <section class="overflow-hidden space-bottom" id="project-sec">
-        <div class="container th-container4">
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <div class="title-area text-center text-lg-start">
-                        <span class="sub-title sub-title3 style1">Case Studies</span>
-                        <h2 class="sec-title">Discover Our Latest Projects</h2>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="sec-btn">
-                        <a href="project.html" class="th-btn style-radius text-capitalize">All Case Studies</a>
-                    </div>
-                </div>
-            </div> <!-- / Title row -->
-            <div class="row gy-4 filter-active">
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_1.jpg" alt="project image">
+    <section class="" id="project-sec">
+        <div class="full-container  space" >
+            <div class="container">
+                <div class="row justify-content-lg-center justify-content-center align-items-center">
+                    <div class="col-lg-5 mb-n2 mb-lg-0">
+                        <div class="title-area text-center">
+                            <span class="sub-title sub-title3">Case Study </span>
+                            <h2 class="sec-title text-black">Our Portfolio / Projects</h2>
                         </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
+                    </div>
+                    
+                </div> <!-- / Title row -->
+
+                <div class="slider-area">
+                    <div class="swiper th-slider has-shadow" id="projectSlider3" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+                        <div class="swiper-wrapper">
+
+                        <!-- Project 1 -->
+                        <div class="swiper-slide">
+                            <div class="project-box">
+                            <div class="project-img">
+                                <img src="assets/img/project/project_3_1.jpg" alt="project image">
+                            </div>
+                            <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
+                                <div class="media-body">
+                                <h3 class="box-title"><a href="#">IT Consultancy</a></h3>
                                 <p class="project-subtitle">Technology</p>
-                                <h3 class="box-title"><a href="project-details.html">IT Consultency</a></h3>
-                                <a href="assets/img/project/project_8_1.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
+                                </div>
+                                <a href="#" class="icon-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#projectModal"
+                                data-title="IT Consultancy"
+                                data-subtitle="Technology"
+                                data-description="We provided IT consultancy services for digital transformation, including infrastructure setup and cloud migration."
+                                data-client="ABC Corp"
+                                data-link="https://client-abc.com">
+                                <i class="far fa-plus"></i>
+                                </a>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_2.jpg" alt="project image">
-                        </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
-                                <p class="project-subtitle">Development</p>
-                                <h3 class="box-title"><a href="project-details.html">Website developments</a></h3>
-                                <a href="assets/img/project/project_8_2.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
+                        <!-- Project 2 -->
+                        <div class="swiper-slide">
+                            <div class="project-box">
+                            <div class="project-img">
+                                <img src="assets/img/project/project_3_2.jpg" alt="project image">
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_3.jpg" alt="project image">
-                        </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
+                            <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
+                                <div class="media-body">
+                                <h3 class="box-title"><a href="#">Web Development</a></h3>
                                 <p class="project-subtitle">Technology</p>
-                                <h3 class="box-title"><a href="project-details.html">Website Design</a></h3>
-                                <a href="assets/img/project/project_8_3.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
+                                </div>
+                                <a href="#" class="icon-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#projectModal"
+                                data-title="Web Development"
+                                data-subtitle="Technology"
+                                data-description="Developed a responsive business website with modern UI, optimized for SEO and performance."
+                                data-client="XYZ Ltd"
+                                data-link="https://client-xyz.com">
+                                <i class="far fa-plus"></i>
+                                </a>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_4.jpg" alt="project image">
+                        <!-- Project 3 -->
+                        <div class="swiper-slide">
+                            <div class="project-box">
+                            <div class="project-img">
+                                <img src="assets/img/project/project_3_3.jpg" alt="project image">
+                            </div>
+                            <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
+                                <div class="media-body">
+                                <h3 class="box-title"><a href="#">Website Design</a></h3>
+                                <p class="project-subtitle">Technology</p>
+                                </div>
+                                <a href="#" class="icon-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#projectModal"
+                                data-title="Website Design"
+                                data-subtitle="Technology"
+                                data-description="Crafted a creative, user-friendly, and mobile-first design for a corporate website."
+                                data-client="Design Studio"
+                                data-link="https://designstudio.com">
+                                <i class="far fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
                         </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
+
+                        <!-- Project 4 -->
+                        <div class="swiper-slide">
+                            <div class="project-box">
+                            <div class="project-img">
+                                <img src="assets/img/project/project_3_4.jpg" alt="project image">
+                            </div>
+                            <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
+                                <div class="media-body">
+                                <h3 class="box-title"><a href="#">SEO Optimization</a></h3>
                                 <p class="project-subtitle">Marketing</p>
-                                <h3 class="box-title"><a href="project-details.html">SEO Optimization</a></h3>
-                                <a href="assets/img/project/project_8_4.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
+                                </div>
+                                <a href="#" class="icon-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#projectModal"
+                                data-title="SEO Optimization"
+                                data-subtitle="Marketing"
+                                data-description="Boosted client’s search rankings with effective keyword research, backlink building, and technical SEO."
+                                data-client="Growth Agency"
+                                data-link="https://growthagency.com">
+                                <i class="far fa-plus"></i>
+                                </a>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_5.jpg" alt="project image">
-                        </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
-                                <p class="project-subtitle">Technology</p>
-                                <h3 class="box-title"><a href="project-details.html">IT Consultency</a></h3>
-                                <a href="assets/img/project/project_8_5.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
-                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="project-card2">
-                        <div class="project-img">
-                            <img src="assets/img/project/project_8_6.jpg" alt="project image">
-                        </div>
-                        <div class="project-content-wrap">
-                            <div class="project-content" data-mask-src="assets/img/shape/project-shape.png">
-                                <p class="project-subtitle">Technology</p>
-                                <h3 class="box-title"><a href="project-details.html">Web Development</a></h3>
-                                <a href="assets/img/project/project_8_6.jpg" class="icon-btn popup-image"><i class="fa-regular fa-magnifying-glass"></i></a>
-                            </div>
-                        </div>
+                    <button data-slider-prev="#projectSlider3" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                    <button data-slider-next="#projectSlider3" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
                     </div>
-                </div>
-
             </div>
+            <div class="shape-mockup" data-top="0%" data-right="0%"><img src="assets/img/shape/tech_shape_6.png" alt="shape"></div>
+            <div class="shape-mockup" data-bottom="0%" data-left="0%"><img src="assets/img/shape/tech_shape_7.png" alt="shape"></div>
         </div>
+
     </section><!--==============================
 Team Area  
 ==============================-->
@@ -1065,118 +1085,138 @@ Feature Area
     <!--==============================
 Testimonial Area  
 ==============================-->
-    <section class="testimonial-area9 overflow-hidden " id="testi-sec" data-bg-src="assets/img/bg/testi_bg.png">
-        <div class="container th-container4">
+    <section class="bg-auto space" data-bg-src="assets/img/bg/testi_bg_2.png">
+        <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title sub-title3">Testimonials</span>
-                <h2 class="sec-title">See what our clients have to say</h2>
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                        <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                    </div>
+                    CUSTOMER FEEDBACK
+                </span>
+                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
             </div>
 
             <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="testiSlider9" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
                     <div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/testi1.png" alt="image">
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">David Farnandes</h3>
+                                    <p class="testi-box_desig">CEO at Anaton</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_2.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Jackline Techie</h3>
+                                    <p class="testi-box_desig">CEO at Kormola</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_3.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Abraham Khalil</h3>
+                                    <p class="testi-box_desig">CEO at Rimasu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_1.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">David Farnandes</h3>
+                                    <p class="testi-box_desig">CEO at Anaton</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_2.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Jackline Techie</h3>
+                                    <p class="testi-box_desig">CEO at Kormola</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="assets/img/testimonial/testi_2_3.jpg" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="assets/img/icon/quote_left_2.svg" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Abraham Khalil</h3>
+                                    <p class="testi-box_desig">CEO at Rimasu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
             </div>
-            <h6 class="mt-3 mb-1">John Carter</h6>
-            <p class="text-muted small mb-3">CEO, Innovatech</p>
-            <p class="testi-box5_text">“Lectus volpat faucibus placerat eget nulla sodales aliquam molestie ante, himenaeos fames reinvent prospective suscipit arcu cras cenas penatibus vivamus, aenean primis enim.”</p>
         </div>
-    </div>
-    
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/testi_img_2.png" alt="image">
-                </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
-            </div>
-            <h6 class="mt-3 mb-1">Sarah Johnson</h6>
-            <p class="text-muted small mb-3">Project Manager, BrightCode</p>
-            <p class="testi-box5_text">“Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration for success.”</p>
-        </div>
-    </div>
-    
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/testi_img_3.png" alt="image">
-                </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
-            </div>
-            <h6 class="mt-3 mb-1">Michael Lee</h6>
-            <p class="text-muted small mb-3">CTO, NexaSoft</p>
-            <p class="testi-box5_text">“Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global collaboration to deliver results.”</p>
-        </div>
-    </div>
-    
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/testi_img_4.png" alt="image">
-                </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
-            </div>
-            <h6 class="mt-3 mb-1">Emily Davis</h6>
-            <p class="text-muted small mb-3">Founder, PixelEdge</p>
-            <p class="testi-box5_text">“The best service metrics before granular schema. Professionally delivered client-centric solutions with consistency and quality results.”</p>
-        </div>
-    </div>
-    
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/" alt="image">
-                </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
-            </div>
-            <h6 class="mt-3 mb-1">David Kim</h6>
-            <p class="text-muted small mb-3">Marketing Head, Cloudify</p>
-            <p class="testi-box5_text">“I've had the pleasure of working with Codecore Solutions for the past year, and I can confidently say they have been instrumental in our growth.”</p>
-        </div>
-    </div>
-    
-    <div class="swiper-slide">
-        <div class="testi-box5 style2 th-ani">
-            <div class="testi-box5_wrapper">
-                <div class="testi-box5_image">
-                    <img src="assets/img/testimonial/testi_img_6.png" alt="image">
-                </div>
-                <div class="testi-quote">
-                    <img src="assets/img/icon/quote3.svg" alt="">
-                </div>
-            </div>
-            <h6 class="mt-3 mb-1">Sophia Martinez</h6>
-            <p class="text-muted small mb-3">COO, DataBridge</p>
-            <p class="testi-box5_text">“Phosfluorescently reinvent prospective metrics before granular schema. Professionally expedited methods and efficient collaboration ensured success.”</p>
-        </div>
-    </div>
-</div>
-
-                </div>
-                <button data-slider-prev="#testiSlider9" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#testiSlider9" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
-            </div>
-        </div>
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="assets/img/shape/line_1.png" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="assets/img/shape/line_2.png" alt="shape"></div>
     </section><!--==============================
 appointment Area  
 ==============================-->
@@ -1382,29 +1422,23 @@ Blog Area
         <div class="copyright-wrap">
             <div class="container th-container4">
                 <div class="row gy-3 justify-content-between align-items-center">
-                    <div class="col-lg-4">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a href="https://themeforest.net/user/themeholy">CodeCore-solutions</a>. All Rights Reserved.</p>
+                    <div class="col-lg-3">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a href="https://themeforest.net/user/themeholy">CodeCore-solutions</a>. <br>All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-5">
-                        <nav class="footer-menu text-white d-none d-lg-inline-block pt-2 ">
-                                <ul>
-                                    <li class="">
-                                        <a href="#hero">Home</a>
-                                        
-                                    </li>
-                                    
-                                    <li><a href="#about-sec">About Us</a></li>
-                                    <li><a href="#service-sec">Services</a></li>
-                                    <li><a href="#project-sec">Portfolio</a></li>
-                                    
-                                    
-                                    
-                                    <li>
-                                        <a href="#contact">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <nav class="footer-menu text-white d-block pt-2">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-center align-items-center list-unstyled m-0 p-0">
+                                <li class="mx-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a>
+                                </li>
+                                <li class="mx-2"><a href="#about-sec">About Us</a></li>
+                                <li class="mx-2"><a href="#service-sec">Services</a></li>
+                                <li class="mx-2"><a href="#project-sec">Portfolio</a></li>
+                                <li class="mx-2"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
+
                     <div class="col-lg-3 text-lg-end text-center">
                         <div class="th-social style4">
                             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -1417,6 +1451,92 @@ Blog Area
             </div>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content shadow-lg rounded-3 animate__animated animate__fadeInDown">
+      
+      <!-- Modal Header -->
+      
+      <div class="modal-header bg-light">
+        <div>
+          <h5 class="modal-title fw-bold text-primary" id="privacyPolicyLabel">Privacy Policy</h5>
+          <div class="border-bottom border-3 border-primary w-25 mt-1"></div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body p-4">
+        <p>
+          At <strong>CodeCore Solutions</strong>, we value your privacy and are committed to protecting your personal information. 
+          This Privacy Policy explains how we collect, use, and safeguard the data you share with us.
+        </p>
+
+        <h6 class="fw-bold mt-3"><i class="fa-solid fa-database me-2 text-primary"></i> 1. Information We Collect</h6>
+        <p>We may collect personal details such as your name, email address, phone number, and company details when you interact with our website or services.</p>
+
+        <h6 class="fw-bold mt-3"><i class="fa-solid fa-gears me-2 text-success"></i> 2. How We Use Your Information</h6>
+        <p>Your information is used to provide services, respond to inquiries, and improve our offerings.</p>
+
+        <h6 class="fw-bold mt-3"><i class="fa-solid fa-lock me-2 text-danger"></i> 3. Data Protection</h6>
+        <p>We implement strict security measures to ensure your personal data remains safe and secure.</p>
+
+        <h6 class="fw-bold mt-3"><i class="fa-solid fa-users me-2 text-warning"></i> 4. Third-Party Sharing</h6>
+        <p>We do not sell or share your data with third parties, except as required by law or with your consent.</p>
+
+        <h6 class="fw-bold mt-3"><i class="fa-solid fa-envelope me-2 text-info"></i> 5. Contact Us</h6>
+        <p>If you have questions about our Privacy Policy, please contact us at 
+          <a href="mailto:info@codecoresolutions.com" class="text-decoration-none fw-semibold">info@codecoresolutions.com</a>.
+        </p>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="fa-solid fa-xmark me-1"></i> Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Template -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content shadow-lg border-0 rounded-3">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-light">
+        <div>
+          <h5 class="modal-title fw-bold text-primary" id="projectModalLabel">Project Details</h5>
+          <div class="border-bottom border-3 border-primary w-25 mt-1"></div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body p-4">
+        <h3 id="modalTitle" class="fw-semibold"></h3>
+        <h6 id="modalSubtitle" class="text-muted mb-3"></h6>
+        <p id="modalDescription" class="mb-3"></p>
+        <p><strong>Client:</strong> <span id="modalClient"></span></p>
+        <p><strong>Website:</strong> <a id="modalLink" href="#" target="_blank" class="text-decoration-none text-primary"></a></p>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
 
     <!--********************************
 			Code End  Here 
@@ -1433,6 +1553,20 @@ Blog Area
     <!--==============================
     All Js File
 ============================== -->
+    <!-- project modal  -->
+     <script>
+        const projectModal = document.getElementById('projectModal');
+        projectModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget; // Button clicked
+            document.getElementById('modalTitle').textContent = button.getAttribute('data-title');
+            document.getElementById('modalSubtitle').textContent = button.getAttribute('data-subtitle');
+            document.getElementById('modalDescription').textContent = button.getAttribute('data-description');
+            document.getElementById('modalClient').textContent = button.getAttribute('data-client');
+            const link = document.getElementById('modalLink');
+            link.textContent = button.getAttribute('data-link');
+            link.href = button.getAttribute('data-link');
+        });
+    </script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
