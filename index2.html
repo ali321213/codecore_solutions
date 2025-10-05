@@ -729,7 +729,8 @@
         </div>
     </section>
     <!-- Project Area -->
-    <section class="" id="project-sec">
+
+    <section id="project-sec">
         <div class="full-container  space">
             <div class="container">
                 <div class="row justify-content-lg-center justify-content-center align-items-center">
@@ -743,28 +744,8 @@
                 <div class="slider-area">
                     <div class="swiper th-slider has-shadow" id="projectSlider3"
                         data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                        <div class="swiper-wrapper">
-                            <!-- Project 1 -->
-                            <div class="swiper-slide">
-                                <div class="project-box">
-                                    <div class="project-img">
-                                        <img src="assets/img/project/project_3_1.jpg" alt="project image">
-                                    </div>
-                                    <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
-                                        <div class="media-body">
-                                            <h3 class="box-title"><a href="#">Van auth</a></h3>
-                                            <p class="project-subtitle">Multi Vendor E-Commerce Application</p>
-                                        </div>
-                                        <a href="#" class="icon-btn" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal" data-title="IT Consultancy"
-                                            data-subtitle="Technology"
-                                            data-description="We provided IT consultancy services for digital transformation, including infrastructure setup and cloud migration."
-                                            data-client="ABC Corp" data-link="https://client-abc.com">
-                                            <i class="far fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-wrapper" id="projectCardsWrapper">
+                            <!-- Slider items will be dynamically inserted here -->
                             <button data-slider-prev="#projectSlider3" class="slider-arrow style3 slider-prev"><i
                                     class="far fa-arrow-left"></i></button>
                             <button data-slider-next="#projectSlider3" class="slider-arrow style3 slider-next"><i
@@ -777,6 +758,7 @@
                             src="assets/img/shape/tech_shape_7.png" alt="shape"></div>
                 </div>
     </section>
+
     <!-- Team Area -->
     <section class="bg-top-center overflow-hidden space" data-bg-src="assets/img/bg/team_bg.png">
         <div class="container th-container4">
@@ -1537,34 +1519,24 @@
         </div>
     </div>
 
-    <!-- Modal Template -->
+    <!-- Project Modal -->
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content shadow-lg border-0 rounded-3">
-                <!-- Modal Header -->
-                <div class="modal-header bg-light">
-                    <div>
-                        <h5 class="modal-title fw-bold text-primary" id="projectModalLabel">Project Details</h5>
-                        <div class="border-bottom border-3 border-primary w-25 mt-1"></div>
-                    </div>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modalTitle" class="modal-title">Project Title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!-- Modal Body -->
-                <div class="modal-body p-4">
-                    <h3 id="modalTitle" class="fw-semibold"></h3>
-                    <h6 id="modalSubtitle" class="text-muted mb-3"></h6>
-                    <p id="modalDescription" class="mb-3"></p>
+                <div class="modal-body px-5">
+                    <h6 id="modalSubtitle" class="text-muted mb-2"></h6>
+                    <p id="modalDescription"></p>
                     <p><strong>Client:</strong> <span id="modalClient"></span></p>
-                    <p><strong>Website:</strong> <a id="modalLink" href="#" target="_blank"
-                            class="text-decoration-none text-primary"></a></p>
-                </div>
-                <!-- Modal Footer -->
-                <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <p><strong>Link:</strong> <a id="modalLink" href="#" target="_blank"></a></p>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Scroll Top Button -->
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -1573,18 +1545,137 @@
             </path>
         </svg>
     </div>
+
     <script>
-        const projectModal = document.getElementById('projectModal');
-        projectModal.addEventListener('show.bs.modal', function (event) {
-            const button = event.relatedTarget; // Button clicked
-            document.getElementById('modalTitle').textContent = button.getAttribute('data-title');
-            document.getElementById('modalSubtitle').textContent = button.getAttribute('data-subtitle');
-            document.getElementById('modalDescription').textContent = button.getAttribute('data-description');
-            document.getElementById('modalClient').textContent = button.getAttribute('data-client');
-            const link = document.getElementById('modalLink');
-            link.textContent = button.getAttribute('data-link');
-            link.href = button.getAttribute('data-link');
+const projects = [
+    {
+        title: "Van Auth",
+        subtitle: "Multi Vendor E-Commerce Application",
+        images: [
+            "assets/img/project/project_3_1.jpg",
+            "assets/img/project/project_3_1_2.jpg"
+        ],
+        description: `
+            VAN HAUTH is a sophisticated Germany-based multi-vendor e-commerce solution designed for scalable marketplace operations. This comprehensive platform enables businesses to create and manage thriving online marketplaces where multiple vendors can seamlessly sell their products alongside the platform owner's offerings.
+            <br><br>
+            <strong>Key Enterprise Features:</strong>
+            <ul>
+                <li><strong>Multi-Tenant Architecture:</strong> Advanced tenant management system, customizable storefront templates, and white-label capabilities.</li>
+                <li><strong>Dynamic Content Management:</strong> Modular section control with enable/disable functionality, CMS-driven content management, real-time storefront customization.</li>
+                <li><strong>Flexible Payment Infrastructure:</strong> Multi-gateway payment system (PayPal, Stripe, Invoice, Prepayment), secure transaction processing.</li>
+                <li><strong>Comprehensive Shipping Solutions:</strong> Integrated carrier management (DHL, AHL, TCS), customizable shipping rules, multi-carrier support per vendor.</li>
+                <li><strong>Advanced Vendor Ecosystem:</strong> Complete supplier management portal, multi-shop inventory control, vendor performance analytics, commission, and payout management.</li>
+                <li><strong>Technical Excellence:</strong> Built with Laravel PHP, real-time interfaces powered by Livewire, modern responsive UI with Tailwind CSS, scalable architecture for enterprise deployment.</li>
+            </ul>
+            <br><br>
+            <strong>Business Value:</strong>
+            This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models. VAN HAUTH combines German engineering precision with cutting-edge e-commerce capabilities, delivering a robust, feature-rich platform ready for immediate deployment and scalable growth.
+        `,
+        client: "ABC Corp",
+        link: "https://client-abc.com"
+    },
+    {
+        title: "Kashmir Enterprise Management System",
+        subtitle: "Enterprise Management System",
+        images: [
+            "assets/img/project/project_3_2.jpg",
+            "assets/img/project/project_3_2_2.jpg",
+            "assets/img/project/project_3_2_3.jpg"
+        ],
+        description: `
+            Kashmir Enterprise Management System is a robust and scalable business solution designed to centralize and streamline core operations for companies. It enables organizations to efficiently manage multiple companies, including their stock, finances, vehicles, staff, and credit records — all within a single, integrated platform.
+            <br><br>
+            <strong>Key Features:</strong>
+            <ul>
+                <li><strong>Company Management:</strong> Create and manage multiple companies with dedicated stock, sales, and expense tracking.</li>
+                <li><strong>Stock Management:</strong> Monitor inventory across companies with automatic deductions on sales and vehicle dispatch, and easy restocking for returns.</li>
+                <li><strong>Financial Tracking:</strong> Record daily income and expenses, with detailed daily, monthly, and yearly reports for performance insights.</li>
+                <li><strong>Staff Management:</strong> Maintain comprehensive employee records, including joining/leaving dates, salary history, and payments.</li>
+                <li><strong>Vehicle Management:</strong> Track vehicle trips, stock transportation, fuel consumption, and mileage to optimize logistics.</li>
+                <li><strong>Credit Management:</strong> Manage customer and vehicle credits with repayment history and outstanding balance tracking.</li>
+                <li><strong>Dashboards & Reports:</strong> Get real-time analytics for sales, expenses, salaries, stock, and vehicle performance.</li>
+            </ul>
+            <br><br>
+            <strong>Technical Highlights:</strong>
+            <ul>
+                <li>Developed using Laravel with a modular architecture for scalability and maintainability.</li>
+                <li>Fully database-driven for accurate record-keeping.</li>
+                <li>Responsive UI for desktop and mobile accessibility.</li>
+                <li>Dynamic reporting tools for real-time business intelligence.</li>
+            </ul>
+            <br><br>
+            The Kashmir Enterprise Management System provides a complete digital backbone for organizations, ensuring efficient management of daily operations, financial transparency, and data-driven decision-making.
+        `,
+        client: "FinScope Inc.",
+        link: "https://finscope.io"
+    },
+    // Add more projects here...
+];
+
+        const wrapper = document.getElementById('projectCardsWrapper');
+        projects.forEach(project => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            // Use first image as preview
+            const previewImage = project.images[0] || 'assets/img/default.jpg';
+            // Escape single quotes for HTML attribute
+            const safeProjectJSON = JSON.stringify(project).replace(/'/g, '&apos;');
+            slide.innerHTML = `
+        <div class="project-box">
+            <div class="project-img">
+                <img src="${previewImage}" alt="project image">
+            </div>
+            <div class="project-content" data-bg-src="assets/img/bg/project_card_bg.png">
+                <div class="media-body">
+                    <h3 class="box-title"><a href="#">${project.title}</a></h3>
+                    <p class="project-subtitle">${project.subtitle}</p>
+                </div>
+                <a href="#" class="icon-btn" 
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal"
+                    data-project='${safeProjectJSON}'>
+                    <i class="far fa-eye"></i>
+                </a>
+            </div>
+        </div>
+    `;
+            wrapper.appendChild(slide);
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectModal = document.getElementById('projectModal');
+            projectModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                if (!button) return;
+                const rawData = button.getAttribute('data-project');
+                if (!rawData) return;
+                try {
+                    const project = JSON.parse(rawData.replace(/&apos;/g, "'"));
+                    // Set modal content
+                    document.getElementById('modalTitle').textContent = project.title;
+                    document.getElementById('modalSubtitle').textContent = project.subtitle;
+                    document.getElementById('modalDescription').innerHTML = project.description;
+                    document.getElementById('modalClient').textContent = project.client;
+                    const link = document.getElementById('modalLink');
+                    link.textContent = project.link;
+                    link.href = project.link;
+                } catch (e) {
+                    console.error('Invalid project data:', e);
+                }
+            });
+        });
+
+        // const projectModal = document.getElementById('projectModal');
+        // projectModal.addEventListener('show.bs.modal', function (event) {
+        //     const button = event.relatedTarget; // Button clicked
+        //     document.getElementById('modalTitle').textContent = button.getAttribute('data-title');
+        //     document.getElementById('modalSubtitle').textContent = button.getAttribute('data-subtitle');
+        //     document.getElementById('modalDescription').textContent = button.getAttribute('data-description');
+        //     document.getElementById('modalClient').textContent = button.getAttribute('data-client');
+        //     const link = document.getElementById('modalLink');
+        //     link.textContent = button.getAttribute('data-link');
+        //     link.href = button.getAttribute('data-link');
+        // });
     </script>
 
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
