@@ -51,10 +51,7 @@
     <!-- All CSS File -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <!-- Magnific Popup -->
@@ -736,7 +733,7 @@
     <!-- Project Area -->
     <section id="project-sec">
         <div class="full-container space">
-            <div class="container"> 
+            <div class="container">
                 <div class="row justify-content-lg-center justify-content-center align-items-center">
                     <div class="col-lg-5 mb-n2 mb-lg-0">
                         <div class="title-area text-center">
@@ -749,13 +746,13 @@
                 <div class="slider-area position-relative arrow-wrap">
                     <div class="swiper th-slider has-shadow" id="projectSlider3"
                         data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
-                        
+
                         <div class="swiper-wrapper" id="projectCardsWrapper">
-                            
+
                         </div>
                     </div>
 
-                    
+
                     <button data-slider-prev="#projectSlider3" class="slider-arrow style3 slider-prev">
                         <i class="far fa-arrow-left"></i>
                     </button>
@@ -1541,73 +1538,68 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
 
-            <!-- Image Carousel -->
-            <div id="modalImageCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="modalImages">
-                <!-- Images injected dynamically -->
+                <!-- Image Carousel -->
+                <div id="modalImageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="modalImages">
+                        <!-- Images injected dynamically -->
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button type="button" data-bs-target="#modalImageCarousel" data-bs-slide="prev"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 text-black hover:text-gray-700 focus:outline-none">
+                        <i class="fas fa-chevron-left text-3xl"></i>
+                        <span class="sr-only">Previous</span>
+                    </button>
+
+                    <button type="button" data-bs-target="#modalImageCarousel" data-bs-slide="next"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-black hover:text-gray-700 focus:outline-none">
+                        <i class="fas fa-chevron-right text-3xl"></i>
+                        <span class="sr-only">Next</span>
+                    </button>
+
                 </div>
 
-                <!-- Carousel Controls -->
-                <button
-                class="carousel-control-prev bg-primary  p-3 "
-                type="button"
-                data-bs-target="#modalImageCarousel"
-                data-bs-slide="prev"
-                >
-                <span class="carousel-control-prev-icon filter-white" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button
-                class="carousel-control-next bg-primary  p-3 "
-                type="button"
-                data-bs-target="#modalImageCarousel"
-                data-bs-slide="next"
-                >
-                <span class="carousel-control-next-icon filter-white" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <!-- Modal Header -->
-            <div class="modal-header bg-light px-5 py-4 border-0">
-                <h4 id="modalTitle" class="modal-title fw-semibold text-primary">Project Title</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <!-- Modal Body -->
-            <div class="modal-body px-5 py-4">
-                <h6 id="modalSubtitle" class="text-muted mb-3"></h6>
-
-                <p id="modalDescription" class="mb-4"></p>
-
-                <div class="row g-3">
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="assets/img/icon/user (1).png" class="me-2" style="height: 25px;" alt="Client">
-                    <span id="modalClient" class="fw-semibold text-dark"></span>
+                <!-- Modal Header -->
+                <div class="modal-header bg-light px-5 py-4 border-0">
+                    <h4 id="modalTitle" class="modal-title fw-semibold text-primary">Project Title</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="assets/img/icon/tech_stack.png" class="me-2" style="height: 35px;" alt="Tech Stack">
-                    <span id="modalStack" class="fw-semibold text-dark"></span>
+                <!-- Modal Body -->
+                <div class="modal-body px-5 py-4">
+                    <h6 id="modalSubtitle" class="text-muted mb-3"></h6>
+
+                    <p id="modalDescription" class="mb-4"></p>
+
+                    <div class="row g-3">
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img src="assets/img/icon/user (1).png" class="me-2" style="height: 25px;" alt="Client">
+                            <span id="modalClient" class="fw-semibold text-dark"></span>
+                        </div>
+
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img src="assets/img/icon/tech_stack.png" class="me-2" style="height: 35px;"
+                                alt="Tech Stack">
+                            <span id="modalStack" class="fw-semibold text-dark"></span>
+                        </div>
+
+                        <div class="col-12 d-flex align-items-center">
+                            <img src="assets/img/icon/http.png" class="me-2" style="height: 28px;" alt="Website">
+                            <a id="modalLink" href="#" target="_blank"
+                                class="link-primary fw-semibold text-decoration-none"></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-12 d-flex align-items-center">
-                    <img src="assets/img/icon/http.png" class="me-2" style="height: 28px;" alt="Website">
-                    <a id="modalLink" href="#" target="_blank" class="link-primary fw-semibold text-decoration-none"></a>
+                <!-- Modal Footer -->
+                <div class="modal-footer bg-light border-0 px-5 py-3 d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <a id="modalVisit" href="#" target="_blank" class="btn btn-primary px-4">
+                        Visit Project
+                    </a>
                 </div>
-                </div>
-            </div>
-
-            <!-- Modal Footer -->
-            <div class="modal-footer bg-light border-0 px-5 py-3 d-flex justify-content-between">
-                <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
-                Close
-                </button>
-                <a id="modalVisit" href="#" target="_blank" class="btn btn-primary px-4">
-                Visit Project
-                </a>
-            </div>
 
             </div>
         </div>
@@ -1624,117 +1616,177 @@
         </svg>
     </div>
 
-        <script>
-            const projects = [
-                {
-                    title: "Van Auth",
-                    subtitle: "Multi Vendor E-Commerce Application",
-                    images: [
-                        "assets/img/projects/vanhauth (5).png",
-                        "assets/img/projects/vanhauth (3).png",
-                        "assets/img/projects/vanhauth (4).png"
-                    ],
-                    description: `
+    <script>
+        const projects = [
+            {
+                title: "Van Auth",
+                subtitle: "Multi Vendor E-Commerce Application",
+                images: [
+                    "assets/img/projects/vanhauth (5).png",
+                    "assets/img/projects/vanhauth (3).png",
+                    "assets/img/projects/vanhauth (4).png"
+                ],
+                description: `
                 VAN HAUTH is a sophisticated Germany-based multi-vendor e-commerce solution designed for scalable marketplace operations. This comprehensive platform enables businesses to create and manage thriving online marketplaces where multiple vendors can seamlessly sell their products alongside the platform owner's offerings.
                 <br><br>
                 <strong>Key Enterprise Features:</strong>
-                <ul>
-                    <li><strong>Multi-Tenant Architecture:</strong> Advanced tenant management system, customizable storefront templates, and white-label capabilities.</li>
-                    <li><strong>Dynamic Content Management:</strong> Modular section control with enable/disable functionality, CMS-driven content management, real-time storefront customization.</li>
-                    <li><strong>Flexible Payment Infrastructure:</strong> Multi-gateway payment system (PayPal, Stripe, Invoice, Prepayment), secure transaction processing.</li>
-                    <li><strong>Comprehensive Shipping Solutions:</strong> Integrated carrier management (DHL, AHL, TCS), customizable shipping rules, multi-carrier support per vendor.</li>
-                    <li><strong>Advanced Vendor Ecosystem:</strong> Complete supplier management portal, multi-shop inventory control, vendor performance analytics, commission, and payout management.</li>
-                    <li><strong>Technical Excellence:</strong> Built with Laravel PHP, real-time interfaces powered by Livewire, modern responsive UI with Tailwind CSS, scalable architecture for enterprise deployment.</li>
-                </ul>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Advanced tenant management system, customizable storefront templates, and white-label capabilities.
+            </p>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Modular section control with enable/disable functionality, CMS-driven content management, real-time storefront customization.
+            </p>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Multi-gateway payment system (PayPal, Stripe, Invoice, Prepayment), secure transaction processing.
+            </p>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Integrated carrier management (DHL, AHL, TCS), customizable shipping rules, multi-carrier support per vendor.
+            </p>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Advanced tenant management system, customizable storefront templates, and white-label capabilities.
+            </p>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+            <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+            <p id="modalTitle" class="modal-title mb-0">
+                Advanced tenant management system, customizable storefront templates, and white-label capabilities.
+            </p>
+            </div>
                 <br>
                 <strong>Business Value:</strong>
                 This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models. VAN HAUTH combines German engineering precision with cutting-edge e-commerce capabilities, delivering a robust, feature-rich platform ready for immediate deployment and scalable growth.
             `
-            ,
-                    client: "Visticle",
-                    stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
-                    link: "https://vanhauth.de"
-                },
-                {
-                    title: "Kashmir Enterprise Management System",
-                    subtitle: "Enterprise Management System",
-                    images: [
-                        "assets/img/projects/Enterprise_Management_System-Portfolio_Description.png",
-                        "assets/img/projects/Enterprise_Management_System-Portfolio_Description1.png",
-                        "assets/img/projects/Enterprise_Management_System-Portfolio_Description2.png"
-                    ],
-                    description: `
+                ,
+                client: "Visticle",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
+                link: "https://vanhauth.de"
+            },
+            {
+                title: "Kashmir Enterprise Management System",
+                subtitle: "Enterprise Management System",
+                images: [
+                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description.png",
+                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description1.png",
+                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description2.png"
+                ],
+                description: `
                 Kashmir Enterprise Management System is a robust and scalable business solution designed to centralize and streamline core operations for companies. It enables organizations to efficiently manage multiple companies, including their stock, finances, vehicles, staff, and credit records — all within a single, integrated platform.
                 <br>
                 <strong>Key Features:</strong>
-                <ul>
-                    <li><strong>Company Management:</strong> Create and manage multiple companies with dedicated stock, sales, and expense tracking.</li>
-                    <li><strong>Stock Management:</strong> Monitor inventory across companies with automatic deductions on sales and vehicle dispatch, and easy restocking for returns.</li>
-                    <li><strong>Financial Tracking:</strong> Record daily income and expenses, with detailed daily, monthly, and yearly reports for performance insights.</li>
-                    <li><strong>Staff Management:</strong> Maintain comprehensive employee records, including joining/leaving dates, salary history, and payments.</li>
-                    <li><strong>Vehicle Management:</strong> Track vehicle trips, stock transportation, fuel consumption, and mileage to optimize logistics.</li>
-                    <li><strong>Credit Management:</strong> Manage customer and vehicle credits with repayment history and outstanding balance tracking.</li>
-                    <li><strong>Dashboards & Reports:</strong> Get real-time analytics for sales, expenses, salaries, stock, and vehicle performance.</li>
-                </ul>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Create and manage multiple companies with dedicated stock, sales, and expense tracking.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Monitor inventory across companies with automatic deductions on sales and vehicle dispatch, and easy restocking for returns.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Record daily income and expenses, with detailed daily, monthly, and yearly reports for performance insights.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Maintain comprehensive employee records, including joining/leaving dates, salary history, and payments.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Track vehicle trips, stock transportation, fuel consumption, and mileage to optimize logistics.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Manage customer and vehicle credits with repayment history and outstanding balance tracking.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Get real-time analytics for sales, expenses, salaries, stock, and vehicle performance.
+</p></div>
                 <strong>Technical Highlights:</strong>
-                <ul>
-                    <li>Developed using Laravel with a modular architecture for scalability and maintainability.</li>
-                    <li>Fully database-driven for accurate record-keeping.</li>
-                    <li>Responsive UI for desktop and mobile accessibility.</li>
-                    <li>Dynamic reporting tools for real-time business intelligence.</li>
-                </ul>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Developed using Laravel with a modular architecture for scalability and maintainability.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Fully database-driven for accurate record-keeping.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Responsive UI for desktop and mobile accessibility.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Dynamic reporting tools for real-time business intelligence.
+</p></div>
                 The Kashmir Enterprise Management System provides a complete digital backbone for organizations, ensuring efficient management of daily operations, financial transparency, and data-driven decision-making.
             `,
-                    client: "ABC Corp",
-                    stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
-                    link: "https://finscope.io"
-                },
-                {
-                    title: "Tahzeel",
-                    subtitle: "Complete CMS-Based Service Website",
-                    images: [
-                        "assets/img/projects/tahzeel (3).png",
-                        "assets/img/projects/tahzeel (3).png"
-                    ],
-                    description: `
+                client: "ABC Corp",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
+                link: "https://finscope.io"
+            },
+            {
+                title: "Tahzeel",
+                subtitle: "Complete CMS-Based Service Website",
+                images: [
+                    "assets/img/projects/tahzeel (3).png",
+                    "assets/img/projects/tahzeel (3).png"
+                ],
+                description: `
                 <p>Tahzeel is a fully dynamic, Laravel-powered web application built as a complete content management system (CMS) for a Dubai-based service company. The platform allows the admin to manage all website sections, service pages, and content effortlessly through a secure and user-friendly backend panel.</p>
                 <p>The website acts as a centralized platform for offering a wide range of government, legal, and business services in Dubai, making it easy for users to explore and access services online.</p>
                 <strong>Services:</strong>
-                <ul>
-                    <li><strong>Government & Legal Services:</strong> MOHRE, DED, Dubai Notary, Legal Translation, and Document Clearance.</li>
-                    <li><strong>Business & Financial Services:</strong> PRO services, VAT, Bank Account Opening, and Investment Plans.</li>
-                    <li><strong>Visa & Residency Services:</strong> Residency visa issuance/renewal, visit visas, domestic worker visas, Emirates ID applications, medical fitness tests, and entry permits.</li>
-                    <li><strong>Real Estate & HR Services:</strong> Assistance with real estate transactions, human resources processes, and typing & attestation services.</li>
-                </ul>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+Government & Legal Services: MOHRE, DED, Dubai Notary, Legal Translation, and Document Clearance.
+</div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+Business & Financial Services: PRO services, VAT, Bank Account Opening, and Investment Plans.
+</div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+Visa & Residency Services: Residency visa issuance/renewal, visit visas, domestic worker visas, Emirates ID applications, medical fitness tests, and entry permits.
+</div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+Real Estate & HR Services: Assistance with real estate transactions, human resources processes, and typing & attestation services.
+</div>
                 <strong>Highlights:</strong>
-                <ul>
-                    <li>Complete CMS with dynamic service management from the admin panel.</li>
-                    <li>Scalable Laravel backend with a clean and responsive front end.</li>
-                    <li>Optimized for Dubai’s government and corporate service structure.</li>
-                    <li>Easy content updates without requiring technical support.</li>
-                    <li>Built to support future service expansions seamlessly.</li>
-                </ul>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Complete CMS with dynamic service management from the admin panel.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Scalable Laravel backend with a clean and responsive front end.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Optimized for Dubai’s government and corporate service structure.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Easy content updates without requiring technical support.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Built to support future service expansions seamlessly.
+</p></div>
                 Tahzeel delivers a powerful and flexible solution for managing a service-based website, ensuring both operational efficiency for administrators and a smooth experience for end-users.
             `,
-                    client: "Dubai Based Service Company",
-                    stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
-                    link: "https://tahzeel.ae"
-                },
-                {
-                    title: "Hiiaka Health",
-                    subtitle: "Multi-Tenant Booking & E-Commerce Platform",
-                    images: [
-                        "assets/img/projects/hiiakahealth (5).png",
-                        "assets/img/projects/hiiakahealth (5).png"
-                    ],
-                    description: `<p>The Multi-Tenant Booking & E-Commerce Platform is a SaaS-ready system developed using Laravel that enables multiple vendors or service providers (tenants) to manage their stores, products, and booking-based services from a single centralized application. A scalable, tenant-aware SaaS platform built for businesses to sell products, manage bookings, and operate independently within a unified system.</p>
+                client: "Dubai Based Service Company",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
+                link: "https://tahzeel.ae"
+            },
+            {
+                title: "Hiiaka Health",
+                subtitle: "Multi-Tenant Booking & E-Commerce Platform",
+                images: [
+                    "assets/img/projects/hiiakahealth (5).png",
+                    "assets/img/projects/hiiakahealth (5).png"
+                ],
+                description: `<p>The Multi-Tenant Booking & E-Commerce Platform is a SaaS-ready system developed using Laravel that enables multiple vendors or service providers (tenants) to manage their stores, products, and booking-based services from a single centralized application. A scalable, tenant-aware SaaS platform built for businesses to sell products, manage bookings, and operate independently within a unified system.</p>
                     <p>Each tenant operates independently with isolated data, custom categories, products, and slot configurations. The platform ensures booking accuracy using atomic transactions, capacity enforcement, and real-time updates powered by Pusher.
                     It includes role-based access control, package-based monetization, and RESTful APIs for seamless integration. The system is designed for high scalability, transaction safety, and real-time performance, making it ideal for marketplaces and multi-tenant service systems.</p>`,
-                    client: "Hiiaka Health: A wellness and hydration therapy business offering on-demand appointments and e-commerce services.",
-                    stack: `Laravel, Livewire, Tailwind CSS, MySQL, Pusher, Stripe, Docker, AWS`,
-                    link: "https://www.hiiakahealth.com"
-                },
-            ];
+                client: "Hiiaka Health: A wellness and hydration therapy business offering on-demand appointments and e-commerce services.",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL, Pusher, Stripe, Docker, AWS`,
+                link: "https://www.hiiakahealth.com"
+            },
+        ];
 
         const wrapper = document.getElementById('projectCardsWrapper');
         projects.forEach(project => {
@@ -1752,9 +1804,9 @@
                             <h3 class="box-title"><a href="#">${project.title}</a></h3>
                             <p class="project-subtitle">${project.subtitle}</p>
                         </div>
-                        <a href="#" style="background: #5a7aeb;border-radius:9px;padding:8px 10px; height: 45px; width: 45px;" data-bs-toggle="modal" data-bs-target="#projectModal"
+                        <a href="#" style="background: #5a7aeb;border-radius:9px;padding:8px;" data-bs-toggle="modal" data-bs-target="#projectModal"
                         data-project='${safeProjectJSON}'>
-                            <i class="bi bi-eye fs-4 text-white"></i>        
+                        <img src="assets/img/icon/show_project_details.png" alt="Show Project Details" style="height: 37px; width: 37px; object-fit: contain;">
                         </a>
                         </div>
                     </div>
@@ -1763,77 +1815,60 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-    const projectModal = document.getElementById('projectModal');
-    projectModal.addEventListener('show.bs.modal', function (event) {
-        const button = event.relatedTarget;
-        if (!button) return;
+            const projectModal = document.getElementById('projectModal');
+            projectModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                if (!button) return;
 
-        const rawData = button.getAttribute('data-project');
-        if (!rawData) return;
+                const rawData = button.getAttribute('data-project');
+                if (!rawData) return;
 
-        try {
-            const project = JSON.parse(rawData.replace(/&apos;/g, "'"));
+                try {
+                    const project = JSON.parse(rawData.replace(/&apos;/g, "'"));
+                    document.getElementById('modalTitle').textContent = project.title;
+                    document.getElementById('modalSubtitle').textContent = project.subtitle;
+                    document.getElementById('modalDescription').innerHTML = project.description;
+                    document.getElementById('modalClient').textContent = project.client;
+                    document.getElementById('modalStack').innerHTML = project.stack;
+                    document.getElementById("modalLink").innerHTML = project.link;
+                    document.getElementById("modalLink").href = project.link;
 
-            // Set modal text content
-            document.getElementById('modalTitle').textContent = project.title;
-            document.getElementById('modalSubtitle').textContent = project.subtitle;
-            document.getElementById('modalDescription').innerHTML = project.description;
-            document.getElementById('modalClient').textContent = project.client;
-            document.getElementById('modalStack').innerHTML = project.stack;
-            document.getElementById("modalLink").innerHTML = project.link;
-            
-            document.getElementById("modalLink").href = project.link;
+                    const visitBtn = document.getElementById("modalVisit");
+                    if (project.link) {
+                        visitBtn.style.display = "inline-block";
+                        visitBtn.href = project.link;
+                    } else {
+                        visitBtn.style.display = "none";
+                    }
 
-            const visitBtn = document.getElementById("modalVisit");
-            if (project.link) {
-                visitBtn.style.display = "inline-block";
-                visitBtn.href = project.link;
-            } else {
-                visitBtn.style.display = "none";
-            }
+                    const link = document.getElementById('modalLink');
+                    link.textContent = project.link;
+                    link.href = project.link;
+                    const modalImages = document.getElementById('modalImages');
+                    modalImages.innerHTML = '';
 
-            const link = document.getElementById('modalLink');
-            link.textContent = project.link;
-            link.href = project.link;
-
-            // ✅ Inject images into Bootstrap carousel
-            const modalImages = document.getElementById('modalImages');
-            modalImages.innerHTML = ''; // clear previous
-
-            if (project.images && project.images.length > 0) {
-                project.images.forEach((src, index) => {
-                    const item = document.createElement('div');
-                    item.className = 'carousel-item' + (index === 0 ? ' active' : '');
-                    item.innerHTML = `
+                    if (project.images && project.images.length > 0) {
+                        project.images.forEach((src, index) => {
+                            const item = document.createElement('div');
+                            item.className = 'carousel-item' + (index === 0 ? ' active' : '');
+                            item.innerHTML = `
                         <img src="${src}" class="d-block w-100" style="max-height:450px; object-fit:contain;" alt="Project Image ${index + 1}">
                     `;
-                    modalImages.appendChild(item);
-                });
-            } else {
-                modalImages.innerHTML = `
+                            modalImages.appendChild(item);
+                        });
+                    } else {
+                        modalImages.innerHTML = `
                     <div class="carousel-item active">
                         <img src="assets/img/default.jpg" class="d-block w-100" style="max-height:450px; object-fit:contain;" alt="Default Image">
                     </div>
                 `;
-            }
+                    }
 
-        } catch (e) {
-            console.error('Invalid project data:', e);
-        }
-    });
-});
-
-        // const projectModal = document.getElementById('projectModal');
-        // projectModal.addEventListener('show.bs.modal', function (event) {
-        //     const button = event.relatedTarget; // Button clicked
-        //     document.getElementById('modalTitle').textContent = button.getAttribute('data-title');
-        //     document.getElementById('modalSubtitle').textContent = button.getAttribute('data-subtitle');
-        //     document.getElementById('modalDescription').textContent = button.getAttribute('data-description');
-        //     document.getElementById('modalClient').textContent = button.getAttribute('data-client');
-        //     const link = document.getElementById('modalLink');
-        //     link.textContent = button.getAttribute('data-link');
-        //     link.href = button.getAttribute('data-link');
-        // });
+                } catch (e) {
+                    console.error('Invalid project data:', e);
+                }
+            });
+        });
     </script>
 
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
