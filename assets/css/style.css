@@ -1734,6 +1734,7 @@ textarea.is-invalid {
 
 .slider-area {
   position: relative;
+  overflow: visible;
 }
 
 .slider-arrow {
@@ -28555,6 +28556,8 @@ span.select2-selection.select2-selection--single:focus {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  height: 100%;
+  min-height: 350px; /* uniform height */
 }
 
 .project-box.style2 {
@@ -28588,6 +28591,8 @@ span.select2-selection.select2-selection--single:focus {
   width: 100%;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+   height: 200px;
+  object-fit: cover;
 }
 
 .project-box .project-content {
