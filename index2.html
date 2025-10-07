@@ -108,29 +108,24 @@
                         <div class="col-auto">
                             <nav class="main-menu style2 d-none d-lg-inline-block">
                                 <ul>
-                                    <li class="">
-                                        <a href="#hero">Home</a>
-
-                                    </li>
-
-                                    <li><a href="#about-sec">About Us</a></li>
-                                    <li><a href="#service-sec">Services</a></li>
-                                    <li><a href="#project-sec">Portfolio</a></li>
-
-
-
-                                    <li>
-                                        <a href="#contact">Contact</a>
-                                    </li>
+                                    <li><a href="#hero" style="font-size: 17px;">Home</a></li>
+                                    <li><a href="#about-sec" style="font-size: 17px;">About Us</a></li>
+                                    <li><a href="#service-sec" style="font-size: 17px;">Services</a></li>
+                                    <li><a href="#project-sec" style="font-size: 17px;">Portfolio</a></li>
+                                    <li><a href="#contact" style="font-size: 17px;">Contact</a></li>
                                 </ul>
                             </nav>
                             <button type="button" class="th-menu-toggle d-block d-lg-none"><i
                                     class="far fa-bars"></i></button>
                         </div>
-                        <div class="col-auto d-none d-xl-inline-block">
-                            <div class="header-button">
-                                <a href="tel:+25862323258" class="th-btn style3 style-radius text-capitalize">Call us:
-                                    +92 123 456789</a>
+                        <div class="col-auto hidden xl:inline-block">
+                            <div class="flex items-center gap-3">
+                                <a href="tel:+92123456789"
+                                    class="flex items-center gap-2 justify-center rounded-full px-4 py-2 text-white"
+                                    style="background-color: #3E66F3; border: none; z-index: 2;">
+                                    <img src="assets/img/icon/phone-call.png" alt="Phone Icon" style="height: 26px;">
+                                    <span class="font-bold tracking-wide">+92 123 456789</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -729,7 +724,6 @@
             </div>
         </div>
     </section>
-
     <!-- Project Area -->
     <section id="project-sec">
         <div class="full-container space">
@@ -742,24 +736,17 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="slider-area position-relative arrow-wrap">
                     <div class="swiper th-slider has-shadow" id="projectSlider3"
                         data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
-
-                        <div class="swiper-wrapper" id="projectCardsWrapper">
-
-                        </div>
+                        <div class="swiper-wrapper" id="projectCardsWrapper"></div>
                     </div>
-
-
                     <button data-slider-prev="#projectSlider3" class="slider-arrow style3 slider-prev">
                         <i class="far fa-arrow-left"></i>
                     </button>
                     <button data-slider-next="#projectSlider3" class="slider-arrow style3 slider-next">
                         <i class="far fa-arrow-right"></i>
                     </button>
-
                     <!-- Shapes -->
                     <div class="shape-mockup" data-top="0%" data-right="0%">
                         <img src="assets/img/shape/tech_shape_6.png" alt="shape" />
@@ -1481,7 +1468,6 @@
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content shadow-lg rounded-3 animate__animated animate__fadeInDown">
-                <!-- Modal Header -->
                 <div class="modal-header bg-light">
                     <div>
                         <h5 class="modal-title fw-bold text-primary" id="privacyPolicyLabel">Privacy Policy</h5>
@@ -1489,46 +1475,37 @@
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!-- Modal Body -->
                 <div class="modal-body p-4">
                     <p>
                         At <strong>Qaisal Tech</strong>, we value your privacy and are committed to protecting
                         your personal information.
                         This Privacy Policy explains how we collect, use, and safeguard the data you share with us.
                     </p>
-
                     <h6 class="fw-bold mt-3"><i class="fa-solid fa-database me-2 text-primary"></i> 1. Information We
                         Collect</h6>
                     <p>We may collect personal details such as your name, email address, phone number, and company
                         details when you interact with our website or services.</p>
-
                     <h6 class="fw-bold mt-3"><i class="fa-solid fa-gears me-2 text-success"></i> 2. How We Use Your
                         Information</h6>
                     <p>Your information is used to provide services, respond to inquiries, and improve our offerings.
                     </p>
-
                     <h6 class="fw-bold mt-3"><i class="fa-solid fa-lock me-2 text-danger"></i> 3. Data Protection</h6>
                     <p>We implement strict security measures to ensure your personal data remains safe and secure.</p>
-
                     <h6 class="fw-bold mt-3"><i class="fa-solid fa-users me-2 text-warning"></i> 4. Third-Party Sharing
                     </h6>
                     <p>We do not sell or share your data with third parties, except as required by law or with your
                         consent.</p>
-
                     <h6 class="fw-bold mt-3"><i class="fa-solid fa-envelope me-2 text-info"></i> 5. Contact Us</h6>
                     <p>If you have questions about our Privacy Policy, please contact us at
                         <a href="mailto:info@codecoresolutions.com"
                             class="text-decoration-none fw-semibold">info@codecoresolutions.com</a>.
                     </p>
                 </div>
-
-                <!-- Modal Footer -->
                 <div class="modal-footer bg-light">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark me-1"></i> Close
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -1537,52 +1514,40 @@
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
-
                 <!-- Image Carousel -->
                 <div id="modalImageCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner" id="modalImages">
                         <!-- Images injected dynamically -->
                     </div>
-
                     <!-- Carousel Controls -->
                     <button type="button" data-bs-target="#modalImageCarousel" data-bs-slide="prev"
                         class="absolute left-4 top-1/2 -translate-y-1/2 text-black hover:text-gray-700 focus:outline-none">
                         <i class="fas fa-chevron-left text-3xl"></i>
                         <span class="sr-only">Previous</span>
                     </button>
-
                     <button type="button" data-bs-target="#modalImageCarousel" data-bs-slide="next"
                         class="absolute right-4 top-1/2 -translate-y-1/2 text-black hover:text-gray-700 focus:outline-none">
                         <i class="fas fa-chevron-right text-3xl"></i>
                         <span class="sr-only">Next</span>
                     </button>
-
                 </div>
-
-                <!-- Modal Header -->
                 <div class="modal-header bg-light px-5 py-4 border-0">
                     <h4 id="modalTitle" class="modal-title fw-semibold text-primary">Project Title</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
-                <!-- Modal Body -->
                 <div class="modal-body px-5 py-4">
                     <h6 id="modalSubtitle" class="text-muted mb-3"></h6>
-
                     <p id="modalDescription" class="mb-4"></p>
-
                     <div class="row g-3">
                         <div class="col-md-6 d-flex align-items-center">
                             <img src="assets/img/icon/user (1).png" class="me-2" style="height: 25px;" alt="Client">
                             <span id="modalClient" class="fw-semibold text-dark"></span>
                         </div>
-
                         <div class="col-md-6 d-flex align-items-center">
                             <img src="assets/img/icon/tech_stack.png" class="me-2" style="height: 35px;"
                                 alt="Tech Stack">
                             <span id="modalStack" class="fw-semibold text-dark"></span>
                         </div>
-
                         <div class="col-12 d-flex align-items-center">
                             <img src="assets/img/icon/http.png" class="me-2" style="height: 28px;" alt="Website">
                             <a id="modalLink" href="#" target="_blank"
@@ -1590,22 +1555,13 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal Footer -->
                 <div class="modal-footer bg-light border-0 px-5 py-3 d-flex justify-content-between">
-                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                    <a id="modalVisit" href="#" target="_blank" class="btn btn-primary px-4">
-                        Visit Project
-                    </a>
+                    <button type="button" class="btn btn-outline-primary px-4" data-bs-dismiss="modal">Close</button>
+                    <a id="modalVisit" href="#" target="_blank" class="btn btn-primary px-4">Visit Project</a>
                 </div>
-
             </div>
         </div>
     </div>
-
-
 
     <!-- Scroll Top Button -->
     <div class="scroll-top">
@@ -1623,13 +1579,15 @@
                 subtitle: "Multi Vendor E-Commerce Application",
                 images: [
                     "assets/img/projects/vanhauth (5).png",
+                    "assets/img/projects/vanhauth (4).png",
                     "assets/img/projects/vanhauth (3).png",
-                    "assets/img/projects/vanhauth (4).png"
+                    "assets/img/projects/vanhauth (2).png",
+                    "assets/img/projects/vanhauth (1).png",
                 ],
                 description: `
                 VAN HAUTH is a sophisticated Germany-based multi-vendor e-commerce solution designed for scalable marketplace operations. This comprehensive platform enables businesses to create and manage thriving online marketplaces where multiple vendors can seamlessly sell their products alongside the platform owner's offerings.
                 <br><br>
-                <strong>Key Enterprise Features:</strong>
+                <strong>✨ Key Features:</strong>
                 <div class="d-flex align-items-center" style="gap: 8px;">
             <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
             <p id="modalTitle" class="modal-title mb-0">
@@ -1665,13 +1623,10 @@
             <p id="modalTitle" class="modal-title mb-0">
                 Advanced tenant management system, customizable storefront templates, and white-label capabilities.
             </p>
-            </div>
-                <br>
+            </div><br>
                 <strong>Business Value:</strong>
-                This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models. VAN HAUTH combines German engineering precision with cutting-edge e-commerce capabilities, delivering a robust, feature-rich platform ready for immediate deployment and scalable growth.
-            `
-                ,
-                client: "Visticle",
+                This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models. VAN HAUTH combines German engineering precision with cutting-edge e-commerce capabilities, delivering a robust, feature-rich platform ready for immediate deployment and scalable growth.`,
+                client: "Visticle: A Germany Based Company",
                 stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
                 link: "https://vanhauth.de"
             },
@@ -1679,48 +1634,49 @@
                 title: "Kashmir Enterprise Management System",
                 subtitle: "Enterprise Management System",
                 images: [
-                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description.png",
-                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description1.png",
-                    "assets/img/projects/Enterprise_Management_System-Portfolio_Description2.png"
+                    "assets/img/projects/enterprise_management_system.png",
+                    "assets/img/projects/enterprise_management_system1.png",
+                    "assets/img/projects/enterprise_management_system2.png",
+                    "assets/img/projects/enterprise_management_system3.png",
                 ],
                 description: `
                 Kashmir Enterprise Management System is a robust and scalable business solution designed to centralize and streamline core operations for companies. It enables organizations to efficiently manage multiple companies, including their stock, finances, vehicles, staff, and credit records — all within a single, integrated platform.
                 <br>
-                <strong>Key Features:</strong>
+                <strong>✨ Key Features:</strong>
                 <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Create and manage multiple companies with dedicated stock, sales, and expense tracking.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Monitor inventory across companies with automatic deductions on sales and vehicle dispatch, and easy restocking for returns.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Record daily income and expenses, with detailed daily, monthly, and yearly reports for performance insights.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Maintain comprehensive employee records, including joining/leaving dates, salary history, and payments.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Track vehicle trips, stock transportation, fuel consumption, and mileage to optimize logistics.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Manage customer and vehicle credits with repayment history and outstanding balance tracking.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Get real-time analytics for sales, expenses, salaries, stock, and vehicle performance.
-</p></div>
+                    Create and manage multiple companies with dedicated stock, sales, and expense tracking.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Monitor inventory across companies with automatic deductions on sales and vehicle dispatch, and easy restocking for returns.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Record daily income and expenses, with detailed daily, monthly, and yearly reports for performance insights.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Maintain comprehensive employee records, including joining/leaving dates, salary history, and payments.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Track vehicle trips, stock transportation, fuel consumption, and mileage to optimize logistics.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Manage customer and vehicle credits with repayment history and outstanding balance tracking.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Get real-time analytics for sales, expenses, salaries, stock, and vehicle performance.
+                </p></div>
                 <strong>Technical Highlights:</strong>
                 <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Developed using Laravel with a modular architecture for scalability and maintainability.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Fully database-driven for accurate record-keeping.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Responsive UI for desktop and mobile accessibility.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Dynamic reporting tools for real-time business intelligence.
-</p></div>
+                    Developed using Laravel with a modular architecture for scalability and maintainability.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Fully database-driven for accurate record-keeping.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Responsive UI for desktop and mobile accessibility.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Dynamic reporting tools for real-time business intelligence.
+                </p></div>
                 The Kashmir Enterprise Management System provides a complete digital backbone for organizations, ensuring efficient management of daily operations, financial transparency, and data-driven decision-making.
             `,
                 client: "ABC Corp",
@@ -1731,7 +1687,8 @@
                 title: "Tahzeel",
                 subtitle: "Complete CMS-Based Service Website",
                 images: [
-                    "assets/img/projects/tahzeel (3).png",
+                    "assets/img/projects/tahzeel (1).png",
+                    "assets/img/projects/tahzeel (2).png",
                     "assets/img/projects/tahzeel (3).png"
                 ],
                 description: `
@@ -1739,33 +1696,33 @@
                 <p>The website acts as a centralized platform for offering a wide range of government, legal, and business services in Dubai, making it easy for users to explore and access services online.</p>
                 <strong>Services:</strong>
                 <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
-Government & Legal Services: MOHRE, DED, Dubai Notary, Legal Translation, and Document Clearance.
-</div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
-Business & Financial Services: PRO services, VAT, Bank Account Opening, and Investment Plans.
-</div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
-Visa & Residency Services: Residency visa issuance/renewal, visit visas, domestic worker visas, Emirates ID applications, medical fitness tests, and entry permits.
-</div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
-Real Estate & HR Services: Assistance with real estate transactions, human resources processes, and typing & attestation services.
-</div>
+                Government & Legal Services: MOHRE, DED, Dubai Notary, Legal Translation, and Document Clearance.
+                </div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+                Business & Financial Services: PRO services, VAT, Bank Account Opening, and Investment Plans.
+                </div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+                Visa & Residency Services: Residency visa issuance/renewal, visit visas, domestic worker visas, Emirates ID applications, medical fitness tests, and entry permits.
+                </div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0"></p>
+                Real Estate & HR Services: Assistance with real estate transactions, human resources processes, and typing & attestation services.
+                </div>
                 <strong>Highlights:</strong>
                 <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Complete CMS with dynamic service management from the admin panel.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Scalable Laravel backend with a clean and responsive front end.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Optimized for Dubai’s government and corporate service structure.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Easy content updates without requiring technical support.
-</p></div>
-<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
-    Built to support future service expansions seamlessly.
-</p></div>
+                Complete CMS with dynamic service management from the admin panel.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                Scalable Laravel backend with a clean and responsive front end.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                Optimized for Dubai’s government and corporate service structure.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                Easy content updates without requiring technical support.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                Built to support future service expansions seamlessly.
+                </p></div>
                 Tahzeel delivers a powerful and flexible solution for managing a service-based website, ensuring both operational efficiency for administrators and a smooth experience for end-users.
             `,
                 client: "Dubai Based Service Company",
@@ -1777,7 +1734,9 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
                 subtitle: "Multi-Tenant Booking & E-Commerce Platform",
                 images: [
                     "assets/img/projects/hiiakahealth (5).png",
-                    "assets/img/projects/hiiakahealth (5).png"
+                    "assets/img/projects/hiiakahealth (2).png",
+                    "assets/img/projects/hiiakahealth (1).png",
+                    "assets/img/projects/hiiakahealth (3).png",
                 ],
                 description: `<p>The Multi-Tenant Booking & E-Commerce Platform is a SaaS-ready system developed using Laravel that enables multiple vendors or service providers (tenants) to manage their stores, products, and booking-based services from a single centralized application. A scalable, tenant-aware SaaS platform built for businesses to sell products, manage bookings, and operate independently within a unified system.</p>
                     <p>Each tenant operates independently with isolated data, custom categories, products, and slot configurations. The platform ensures booking accuracy using atomic transactions, capacity enforcement, and real-time updates powered by Pusher.
@@ -1785,6 +1744,142 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
                 client: "Hiiaka Health: A wellness and hydration therapy business offering on-demand appointments and e-commerce services.",
                 stack: `Laravel, Livewire, Tailwind CSS, MySQL, Pusher, Stripe, Docker, AWS`,
                 link: "https://www.hiiakahealth.com"
+            },
+            {
+                title: "Sieko Live Link",
+                subtitle: "Custom CMS & Store Builder",
+                images: [
+                    "assets/img/projects/cms.png",
+                    "assets/img/projects/cms2.png",
+                    "assets/img/projects/cms3.png",
+                ],
+                description: `
+                Custom CMS and store builder including SEO optimization, traffic monitoring, analytics dashboards, and user/role management.
+                <br>
+                <strong>✨ Key Features:</strong>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Modular section control with enable/disable functionality, CMS-driven content management, real-time storefront customization.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Multi-gateway payment system (PayPal, Stripe, Invoice, Prepayment), secure transaction processing.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Integrated carrier management (DHL, AHL, TCS), customizable shipping rules, multi-carrier support per vendor.
+                </p></div><br>
+                <strong>Business Value:</strong>
+                This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models.
+                `,
+                client: "Visticle",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
+                link: "https://vanhauth.de"
+            },
+            {
+                title: "Pink Wheel",
+                subtitle: "Complain Management System",
+                images: [
+                    "assets/img/projects/pinkwheel.png",
+                    "assets/img/projects/pinkwheel.png",
+                ],
+                description: `
+                A smart platform to log, track, and resolve complaints with real-time accountability. It includes team management, live GPS tracking, geolocation, and heartbeat monitoring to ensure faster response times. With automated alerts, analytics, and reports, the system boosts efficiency, transparency, and customer satisfaction.
+                <br>
+                <strong>✨ Key Features:</strong>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Modular section control with enable/disable functionality, CMS-driven content management, real-time storefront customization.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Multi-gateway payment system (PayPal, Stripe, Invoice, Prepayment), secure transaction processing.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;">
+                <img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon">
+                <p id="modalTitle" class="modal-title mb-0">
+                    Integrated carrier management (DHL, AHL, TCS), customizable shipping rules, multi-carrier support per vendor.
+                </p></div><br>
+                <strong>Business Value:</strong>
+                A smart platform to log, track, and resolve complaints with real-time accountability. It includes team management, live GPS tracking, geolocation, and heartbeat monitoring to ensure faster response times. With automated alerts, analytics, and reports, the system boosts efficiency, transparency, and customer satisfaction.
+                `,
+                client: "Police Station Satellite Town",
+                stack: `Laravel, Livewire, Tailwind CSS, MySQL`,
+                link: "https://vanhauth.de"
+            },
+            {
+                title: "BUYCEX",
+                subtitle: "Crypto Exchange Platform",
+                images: [
+                    "assets/img/projects/buycex.png",
+                    "assets/img/projects/buycex1.png",
+                    "assets/img/projects/buycex2.png",
+                ],
+                description: `
+                BuyCex is a modern, full-featured cryptocurrency trading platform designed to offer users a seamless and secure crypto trading experience. Built with a robust backend and responsive frontend, it provides real-time market data, advanced trading tools, and multiple earning options to support both beginner and professional traders.
+                The platform allows users to buy, sell, and trade cryptocurrencies, participate in presales and token launches, and manage their digital assets with confidence. With top-tier security standards, proof-of-reserves transparency, and a user-first experience, BuyCex aims to be the future of crypto trading.
+                <br>
+                <strong>✨ Key Features:</strong>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Spot & Derivatives Trading — Real-time crypto trading with intuitive charts and order management.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    New Listings & Market Overview — Dynamic coin listings, top gainers, and market performance tracking.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Pre-Sale & Launch Guard — Participate in secure token presales and verified project launches.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Earn & BitSaver — Passive income options through staking and automated savings tools.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Proof of Reserves (PoR) — Transparent asset reserve verification for complete user fund coverage.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Cross-Platform Trading — Fully responsive design + mobile app support for Android and iOS.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Multilingual & Global Support — Community reach across 200+ countries with 20+ languages.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Educational Resources — Built-in learning center for crypto education and FAQs for beginners.
+                </p></div>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+                    Secure Authentication & Account Protection — Encryption, MFA, and security-first architecture.
+                </p></div>
+                <br>
+                <strong>🛠️ Services Provided:-</strong>
+                <div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Frontend built using Vue.js for responsive UI/UX. Laravel backend with real-time APIs for market data, trading, and account management.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Live price updates, order book, and trading pair management. Secure trade execution and transaction handling.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Secure onboarding, KYC integration, wallet management, and protected trading access.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Integration with blockchain APIs and fiat on-ramp for deposits and withdrawals.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Optimized for both desktop browsers and mobile apps, ensuring 24/7 trading access.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    End-to-end encryption, Proof-of-Reserves, robust account protection, and compliance with AML/CFT policies.
+</p></div>
+<div class="d-flex align-items-center" style="gap: 8px;"><img src="assets/img/icon/bullet-point.png" style="height: 20px;" alt="Feature Icon"><p id="modalTitle" class="modal-title mb-0">
+    Blogs, announcements, FAQs, chat support, and community engagement features.
+</p></div>
+                This platform represents a turnkey solution for entrepreneurs and established businesses seeking to launch or expand their e-commerce marketplace presence. The system's modular design allows for complete customization, making it an ideal foundation for B2B, B2C, and hybrid marketplace models.
+                `,
+                client: "Buycex",
+                stack: `Laravel, React.js, Livewire, Tailwind CSS, MySQL, RESTful APIs, Stripe Integration, JWT/Passport Authentication, CI/CD, AWS`,
+                link: "https://www.buycex.com"
             },
         ];
 
@@ -1819,10 +1914,8 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
             projectModal.addEventListener('show.bs.modal', function (event) {
                 const button = event.relatedTarget;
                 if (!button) return;
-
                 const rawData = button.getAttribute('data-project');
                 if (!rawData) return;
-
                 try {
                     const project = JSON.parse(rawData.replace(/&apos;/g, "'"));
                     document.getElementById('modalTitle').textContent = project.title;
@@ -1832,7 +1925,6 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
                     document.getElementById('modalStack').innerHTML = project.stack;
                     document.getElementById("modalLink").innerHTML = project.link;
                     document.getElementById("modalLink").href = project.link;
-
                     const visitBtn = document.getElementById("modalVisit");
                     if (project.link) {
                         visitBtn.style.display = "inline-block";
@@ -1840,13 +1932,11 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
                     } else {
                         visitBtn.style.display = "none";
                     }
-
                     const link = document.getElementById('modalLink');
                     link.textContent = project.link;
                     link.href = project.link;
                     const modalImages = document.getElementById('modalImages');
                     modalImages.innerHTML = '';
-
                     if (project.images && project.images.length > 0) {
                         project.images.forEach((src, index) => {
                             const item = document.createElement('div');
@@ -1863,7 +1953,6 @@ Real Estate & HR Services: Assistance with real estate transactions, human resou
                     </div>
                 `;
                     }
-
                 } catch (e) {
                     console.error('Invalid project data:', e);
                 }
