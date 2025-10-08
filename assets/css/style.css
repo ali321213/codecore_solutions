@@ -24754,6 +24754,8 @@ span.select2-selection.select2-selection--single:focus {
 
 .cta-content .cta-wrapper .cta-icon {
   width: 90px;
+  position: relative;
+  
   height: 90px;
   line-height: 90px;
   border-radius: 90px;
@@ -24764,6 +24766,23 @@ span.select2-selection.select2-selection--single:focus {
   backdrop-filter: blur(11px);
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  /* Extra small devices */
+}
+
+.cta-content .cta-wrapper .cta-icon img{
+  width: 90px;
+  position: absolute;
+  top: 22px;
+  height: 40px;
+  line-height: 90px;
+  border-radius: 90px;
+  text-align: center;
+  /* border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; */
   /* Extra small devices */
 }
 
